@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Overview — SRHP Admin</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/style.css">
+<link rel="stylesheet" href="css/admin.css">
+</head>
+<body class="admin-body">
+
+<div class="admin-shell">
+  <aside class="admin-sidebar" id="adminSidebar"></aside>
+
+  <div class="admin-main">
+    <div class="admin-topbar" id="adminTopbar"></div>
+
+    <div class="admin-content">
+      <div class="admin-page-head">
+        <div>
+          <h1 id="pageTitle">Overview</h1>
+          <p class="admin-page-sub" id="pageSub"></p>
+        </div>
+      </div>
+
+      <div class="admin-stat-grid" id="statGrid"></div>
+
+      <div class="admin-two-col">
+        <div class="admin-block">
+          <div class="section-head"><h2>Students by state</h2></div>
+          <div class="admin-bar-chart-wrap">
+            <div class="admin-bar-chart" id="stateBarChart"></div>
+            <div class="admin-bar-labels" id="stateBarLabels"></div>
+          </div>
+        </div>
+
+        <div class="admin-block">
+          <div class="section-head"><h2>Recent activity</h2></div>
+          <div class="admin-table-wrap">
+            <table class="admin-table">
+              <tbody id="recentActivityBody"></tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <div class="admin-block" style="margin-top:32px;">
+        <div class="section-head"><h2>Recently published updates</h2></div>
+        <div class="admin-table-wrap">
+          <table class="admin-table">
+            <thead><tr><th>Title</th><th>Category</th><th>Published</th></tr></thead>
+            <tbody id="recentNewsBody"></tbody>
+          </table>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<script src="../js/mock-data.js"></script>
+<script src="../js/api-config.js"></script>
+<script src="../js/live-data.js"></script>
+<script src="js/admin-auth.js"></script>
+<script src="js/admin-data.js"></script>
+<script src="js/dashboard.js"></script>
+</body>
+</html>

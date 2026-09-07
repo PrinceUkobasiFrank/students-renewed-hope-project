@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>States — SRHP Admin</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/style.css">
+<link rel="stylesheet" href="css/admin.css">
+</head>
+<body class="admin-body">
+
+<div class="admin-shell">
+  <aside class="admin-sidebar" id="adminSidebar"></aside>
+
+  <div class="admin-main">
+    <div class="admin-topbar" id="adminTopbar"></div>
+
+    <div class="admin-content">
+      <div class="admin-page-head">
+        <div>
+          <h1>States</h1>
+          <p class="admin-page-sub" id="pageSub"></p>
+        </div>
+      </div>
+
+      <div class="admin-toolbar" id="statesToolbar">
+        <input type="search" id="stateSearch" placeholder="Search states">
+        <select id="statusFilter">
+          <option value="">All statuses</option>
+          <option value="active">Community active</option>
+          <option value="pending">Coordinator pending</option>
+        </select>
+      </div>
+
+      <div class="admin-table-wrap">
+        <table class="admin-table">
+          <thead>
+            <tr><th>State</th><th>Registered students</th><th>Status</th><th>Community</th></tr>
+          </thead>
+          <tbody id="statesBody"></tbody>
+        </table>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<div class="admin-drawer-overlay" id="stateDrawer" hidden>
+  <div class="admin-drawer">
+    <button class="admin-drawer-close" id="drawerClose">&times;</button>
+    <div id="drawerContent"></div>
+  </div>
+</div>
+
+<script src="../js/mock-data.js"></script>
+<script src="../js/api-config.js"></script>
+<script src="../js/live-data.js"></script>
+<script src="js/admin-auth.js"></script>
+<script src="js/admin-data.js"></script>
+<script src="js/states.js"></script>
+</body>
+</html>

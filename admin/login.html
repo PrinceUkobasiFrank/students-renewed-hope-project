@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Admin login — Students Renewed Hope Project</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/style.css">
+<link rel="stylesheet" href="css/admin.css">
+</head>
+<body class="admin-body">
+
+<main>
+  <section class="auth-section">
+    <div class="wrap auth-wrap">
+      <div class="auth-card" style="max-width:480px;">
+        <img src="../images/shrp.jpg" alt="Students Renewed Hope Project" class="brand-logo" style="margin-bottom:20px;">
+        <p class="hero-kicker">Admin login</p>
+        <h1 class="auth-title">CRM access</h1>
+        <p class="reg-hero-sub-dark">Log in with your admin account. Your role and, if applicable, your assigned state are determined by your account — not chosen here.</p>
+
+        <form id="adminLoginForm" class="auth-form">
+          <div class="field">
+            <label for="adminEmail">Email address</label>
+            <input type="email" id="adminEmail" required autocomplete="email">
+          </div>
+          <div class="field">
+            <label for="adminPassword">Password</label>
+            <input type="password" id="adminPassword" required autocomplete="current-password">
+          </div>
+          <button type="submit" class="btn btn-accent btn-lg" style="width:100%;">Log in</button>
+          <p class="form-error" id="adminLoginError" hidden></p>
+        </form>
+
+        <p class="auth-switch"><a href="../index.html" class="text-link">Back to the public site</a></p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<script src="../js/mock-data.js"></script>
+<script src="../js/api-config.js"></script>
+<script src="../js/live-data.js"></script>
+<script src="js/admin-login.js"></script>
+</body>
+</html>
