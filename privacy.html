@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy notice — Students Renewed Hope Project</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap header-row">
+    <a href="index.html" class="brand">
+      <img src="images/shrp.jpg" alt="Students Renewed Hope Project" class="brand-logo">
+      <span class="brand-name">Students Renewed<br>Hope Project</span>
+    </a>
+    <nav class="main-nav" id="mainNav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="states.html">Find your state</a>
+      <a href="card.html">Supporter card</a>
+      <a href="news.html">Updates</a>
+      <a href="contact.html">Contact</a>
+      <a href="login.html" class="mobile-only-link">Log in</a>
+    </nav>
+    <div class="header-actions">
+      <button class="icon-btn" id="notifBtn" aria-label="Notifications">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 8a6 6 0 0 0-12 0c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg>
+        <span class="notif-dot" id="notifDot" hidden></span>
+      </button>
+      <a href="login.html" class="header-login-link">Log in</a>
+      <a href="register.html" class="btn btn-primary">Join the network</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<div class="notif-panel" id="notifPanel" hidden>
+  <div class="wrap notif-panel-inner">
+    <p class="notif-empty">No new notifications yet. We'll let you know when your state community goes live or new updates are posted.</p>
+  </div>
+</div>
+
+<main>
+
+  <section class="reg-hero">
+    <div class="wrap">
+      <p class="hero-kicker">Privacy</p>
+      <h1>What we collect, and why</h1>
+      <p class="reg-hero-sub">Short version: only what's needed to organize the network, nothing more.</p>
+    </div>
+  </section>
+
+  <section class="privacy-section">
+    <div class="wrap privacy-grid">
+      <div class="privacy-copy">
+
+        <h2>What we collect</h2>
+        <ul class="privacy-list">
+          <li><strong>Name and email</strong> — to identify your profile and confirm registration.</li>
+          <li><strong>State and institution</strong> — to connect you to the right community and give coordinators an accurate count.</li>
+          <li><strong>Level</strong> — used only for aggregate statistics.</li>
+          <li><strong>Phone number</strong> — optional. We only ask for it if it's actually useful, not by default.</li>
+          <li><strong>Profile photo</strong> — optional, used only if you generate a supporter card.</li>
+        </ul>
+
+        <h2>What we don't collect</h2>
+        <ul class="privacy-list">
+          <li><strong>National Identification Number (NIN)</strong> — never. There's no scenario in this platform that requires it.</li>
+          <li><strong>Voter registration data</strong> — this platform is not part of, and does not replace, the official voter registration process.</li>
+          <li><strong>Payment information</strong> — the platform has no payment features.</li>
+        </ul>
+
+        <h2>Who can see your data</h2>
+        <p>Your profile is visible to your state coordinator and national administrators, for the purpose of running the network. It is not sold, shared with advertisers, or made public. Your supporter card, once generated and shared by you, is of course visible to whoever you share it with.</p>
+
+        <h2>Your choices</h2>
+        <p>You can update your profile at any time. If you want your data removed, contact us and we'll process the request.</p>
+
+      </div>
+
+      <aside class="reg-side">
+        <div class="side-block side-note">
+          <h3>Questions about this notice</h3>
+          <p>Reach out through the <a href="contact.html" class="text-link">contact page</a> and select "General question."</p>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-grid">
+    <div>
+      <img src="images/shrp.jpg" alt="Students Renewed Hope Project" class="brand-logo small">
+      <p class="footer-tag">Digital infrastructure for organizing the student network. 2027.</p>
+    </div>
+    <div class="footer-links">
+      <a href="about.html">About</a>
+      <a href="states.html">States</a>
+      <a href="news.html">Updates</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </div>
+</footer>
+
+<script src="js/mock-data.js"></script>
+<script src="js/api-config.js"></script>
+<script src="js/live-data.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

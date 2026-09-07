@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Students Renewed Hope Project — Join the student network</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap header-row">
+    <a href="index.html" class="brand">
+      <img src="images/shrp.jpg" alt="Students Renewed Hope Project" class="brand-logo">
+      <span class="brand-name">Students Renewed<br>Hope Project</span>
+    </a>
+
+    <nav class="main-nav" id="mainNav">
+      <a href="index.html" class="active">Home</a>
+      <a href="about.html">About</a>
+      <a href="states.html">Find your state</a>
+      <a href="card.html">Supporter card</a>
+      <a href="news.html">Updates</a>
+      <a href="contact.html">Contact</a>
+      <a href="login.html" class="mobile-only-link">Log in</a>
+    </nav>
+
+    <div class="header-actions">
+      <button class="icon-btn" id="notifBtn" aria-label="Notifications">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 8a6 6 0 0 0-12 0c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg>
+        <span class="notif-dot" id="notifDot" hidden></span>
+      </button>
+      <a href="login.html" class="header-login-link">Log in</a>
+      <a href="register.html" class="btn btn-primary">Join the network</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<div class="notif-panel" id="notifPanel" hidden>
+  <div class="wrap notif-panel-inner">
+    <p class="notif-empty">No new notifications yet. We'll let you know when your state community goes live or new updates are posted.</p>
+  </div>
+</div>
+
+<main>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div class="hero-copy">
+        <p class="hero-kicker">2027 · Nationwide</p>
+        <h1>Every registered student is<br>one more organized voice.</h1>
+        <p class="hero-sub">Register once. Get connected to your state's student community, carry a supporter card, and stay on top of what's happening — all in one place.</p>
+        <div class="hero-actions">
+          <a href="register.html" class="btn btn-accent btn-lg">Join the student network</a>
+          <a href="states.html" class="btn btn-ghost btn-lg">Find your state</a>
+        </div>
+      </div>
+      <div class="hero-stats">
+        <div class="stat-block">
+          <span class="stat-num" id="statTotalStudents" data-count="0">0</span>
+          <span class="stat-label">Registered students</span>
+        </div>
+        <div class="stat-block">
+          <span class="stat-num" id="statStatesActivated" data-count="0">0</span>
+          <span class="stat-label">States &amp; FCT activated</span>
+        </div>
+        <div class="stat-block">
+          <span class="stat-num" id="statCardsGenerated" data-count="0">0</span>
+          <span class="stat-label">Supporter cards generated</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LATEST UPDATES — foremost per product priority -->
+  <section class="news-section">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Latest updates</h2>
+        <a href="news.html" class="text-link">All updates</a>
+      </div>
+      <div class="news-grid" id="newsGrid">
+        <!-- populated by js/news.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- WHAT IS THE PROJECT -->
+  <section class="about-strip">
+    <div class="wrap about-grid">
+      <h2>What is the Students Renewed<br>Hope Project?</h2>
+      <p>A student-led network that organizes registered students into active state communities, keeps them informed, and gives coordinators a clear, honest picture of who's involved and where — state by state, institution by institution.</p>
+    </div>
+  </section>
+
+  <!-- FIND YOUR STATE -->
+  <section class="states-section">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Find your state</h2>
+        <a href="states.html" class="text-link">View all 37</a>
+      </div>
+      <p class="section-sub">Every state has its own coordinator and community link. Find yours and connect directly.</p>
+      <div class="state-chip-row" id="stateChips"></div>
+    </div>
+  </section>
+
+  <!-- SUPPORTER CARD -->
+  <section class="card-section">
+    <div class="wrap card-grid">
+      <div class="card-copy">
+        <h2>Generate your<br>supporter card</h2>
+        <p>Add your name, state, and photo — get a shareable card in seconds. Every card carries your state forward.</p>
+        <a href="card.html" class="btn btn-accent btn-lg">Generate your card</a>
+      </div>
+      <div class="card-visual" aria-hidden="true">
+        <div class="mock-card">
+          <span class="mock-card-label">Supporter card</span>
+          <span class="mock-card-name">Your name here</span>
+          <span class="mock-card-state">Your state</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-grid">
+    <div>
+      <img src="images/shrp.jpg" alt="Students Renewed Hope Project" class="brand-logo small">
+      <p class="footer-tag">Digital infrastructure for organizing the student network. 2027.</p>
+    </div>
+    <div class="footer-links">
+      <a href="about.html">About</a>
+      <a href="states.html">States</a>
+      <a href="news.html">Updates</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </div>
+</footer>
+
+<script src="js/mock-data.js"></script>
+<script src="js/api-config.js"></script>
+<script src="js/live-data.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

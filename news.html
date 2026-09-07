@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Updates — Students Renewed Hope Project</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap header-row">
+    <a href="index.html" class="brand">
+      <img src="images/shrp.jpg" alt="Students Renewed Hope Project" class="brand-logo">
+      <span class="brand-name">Students Renewed<br>Hope Project</span>
+    </a>
+
+    <nav class="main-nav" id="mainNav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="states.html">Find your state</a>
+      <a href="card.html">Supporter card</a>
+      <a href="news.html" class="active">Updates</a>
+      <a href="contact.html">Contact</a>
+      <a href="login.html" class="mobile-only-link">Log in</a>
+    </nav>
+
+    <div class="header-actions">
+      <button class="icon-btn" id="notifBtn" aria-label="Notifications">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 8a6 6 0 0 0-12 0c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg>
+        <span class="notif-dot" id="notifDot" hidden></span>
+      </button>
+      <a href="login.html" class="header-login-link">Log in</a>
+      <a href="register.html" class="btn btn-primary">Join the network</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<div class="notif-panel" id="notifPanel" hidden>
+  <div class="wrap notif-panel-inner">
+    <p class="notif-empty">No new notifications yet. We'll let you know when your state community goes live or new updates are posted.</p>
+  </div>
+</div>
+
+<main>
+
+  <section class="reg-hero">
+    <div class="wrap">
+      <p class="hero-kicker">Updates</p>
+      <h1>Latest from the network</h1>
+      <p class="reg-hero-sub">Community milestones, product changes, and coordinator announcements — as they happen.</p>
+
+      <div class="news-filter-row">
+        <button class="filter-chip active" data-filter="all">All</button>
+        <button class="filter-chip" data-filter="community">Community</button>
+        <button class="filter-chip" data-filter="product">Product</button>
+        <button class="filter-chip" data-filter="policy">Policy</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="news-list-section">
+    <div class="wrap">
+      <article class="news-feature" id="newsFeature"></article>
+      <div class="news-grid news-grid-list" id="newsGridFull"></div>
+      <p class="states-empty" id="newsEmpty" hidden>No updates in this category yet.</p>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-grid">
+    <div>
+      <img src="images/shrp.jpg" alt="Students Renewed Hope Project" class="brand-logo small">
+      <p class="footer-tag">Digital infrastructure for organizing the student network. 2027.</p>
+    </div>
+    <div class="footer-links">
+      <a href="about.html">About</a>
+      <a href="states.html">States</a>
+      <a href="news.html">Updates</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </div>
+</footer>
+
+<script src="js/mock-data.js"></script>
+<script src="js/api-config.js"></script>
+<script src="js/live-data.js"></script>
+<script src="js/main.js"></script>
+<script src="js/news.js"></script>
+</body>
+</html>

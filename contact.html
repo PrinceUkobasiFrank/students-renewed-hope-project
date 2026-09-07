@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — Students Renewed Hope Project</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap header-row">
+    <a href="index.html" class="brand">
+      <img src="images/shrp.jpg" alt="Students Renewed Hope Project" class="brand-logo">
+      <span class="brand-name">Students Renewed<br>Hope Project</span>
+    </a>
+    <nav class="main-nav" id="mainNav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="states.html">Find your state</a>
+      <a href="card.html">Supporter card</a>
+      <a href="news.html">Updates</a>
+      <a href="contact.html" class="active">Contact</a>
+      <a href="login.html" class="mobile-only-link">Log in</a>
+    </nav>
+    <div class="header-actions">
+      <button class="icon-btn" id="notifBtn" aria-label="Notifications">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 8a6 6 0 0 0-12 0c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg>
+        <span class="notif-dot" id="notifDot" hidden></span>
+      </button>
+      <a href="login.html" class="header-login-link">Log in</a>
+      <a href="register.html" class="btn btn-primary">Join the network</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<div class="notif-panel" id="notifPanel" hidden>
+  <div class="wrap notif-panel-inner">
+    <p class="notif-empty">No new notifications yet. We'll let you know when your state community goes live or new updates are posted.</p>
+  </div>
+</div>
+
+<main>
+
+  <section class="reg-hero">
+    <div class="wrap">
+      <p class="hero-kicker">Contact</p>
+      <h1>Get in touch</h1>
+      <p class="reg-hero-sub">Questions, coordinator nominations, or something not working — tell us here.</p>
+    </div>
+  </section>
+
+  <section class="direct-contact-section">
+    <div class="wrap direct-contact-grid">
+      <a href="mailto:hello@studentsrenewedhope.com.ng" class="direct-contact-card">
+        <span class="direct-contact-label">Email</span>
+        <span class="direct-contact-value">hello@studentsrenewedhope.com.ng</span>
+      </a>
+      <a href="tel:+2349015003692" class="direct-contact-card">
+        <span class="direct-contact-label">Phone</span>
+        <span class="direct-contact-value">+234 901 500 3692</span>
+      </a>
+    </div>
+  </section>
+
+  <section class="reg-section">
+    <div class="wrap reg-grid">
+
+      <form class="reg-form" id="contactForm">
+        <p class="form-mailto-note">This form opens your email app with everything filled in, addressed to hello@studentsrenewedhope.com.ng — just hit send there.</p>
+        <div class="field">
+          <label for="ctReason">What's this about</label>
+          <select id="ctReason" required>
+            <option value="" disabled selected>Select a reason</option>
+            <option>General question</option>
+            <option>Coordinator nomination</option>
+            <option>Report a problem</option>
+            <option>Something else</option>
+          </select>
+        </div>
+        <div class="field-row">
+          <div class="field">
+            <label for="ctName">Name</label>
+            <input type="text" id="ctName" required>
+          </div>
+          <div class="field">
+            <label for="ctEmail">Email</label>
+            <input type="email" id="ctEmail" required>
+          </div>
+        </div>
+        <div class="field">
+          <label for="ctState">State <span class="field-optional">(if relevant)</span></label>
+          <select id="ctState">
+            <option value="" selected>Not state-specific</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="ctMessage">Message</label>
+          <textarea id="ctMessage" rows="5" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-accent btn-lg">Open email to send</button>
+      </form>
+
+      <aside class="reg-side">
+        <div class="side-block">
+          <h3>Coordinator nominations</h3>
+          <p class="side-note-p">If your state doesn't have an active coordinator yet, use this form to nominate yourself or someone else. The national team reviews every submission.</p>
+        </div>
+        <div class="side-block side-note">
+          <h3>Before you write in</h3>
+          <ul class="side-list">
+            <li>Registration issues — check your email for a confirmation first</li>
+            <li>Card not generating — try a smaller photo file</li>
+            <li>State community link not working — let us know which state</li>
+          </ul>
+        </div>
+      </aside>
+
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-grid">
+    <div>
+      <img src="images/shrp.jpg" alt="Students Renewed Hope Project" class="brand-logo small">
+      <p class="footer-tag">Digital infrastructure for organizing the student network. 2027.</p>
+    </div>
+    <div class="footer-links">
+      <a href="about.html">About</a>
+      <a href="states.html">States</a>
+      <a href="news.html">Updates</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </div>
+</footer>
+
+<script src="js/mock-data.js"></script>
+<script src="js/api-config.js"></script>
+<script src="js/live-data.js"></script>
+<script src="js/main.js"></script>
+<script src="js/contact.js"></script>
+</body>
+</html>
