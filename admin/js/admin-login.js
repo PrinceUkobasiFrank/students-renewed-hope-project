@@ -20,7 +20,7 @@ if (adminLoginForm) {
     submitBtn.textContent = 'Logging in…';
 
     try {
-      const result = await apiFetch('/api/admin/auth/login', { method: 'POST', body: { email, password } });
+      const result = await apiFetch('/api/auth/admin/login', { method: 'POST', body: { email, password } });
       // The JWT itself carries role/state_id (readable, not just enforced
       // server-side) — admin-auth.js decodes it to build the sidebar.
       setCookie('srhp_admin_session', result.token, 1);
